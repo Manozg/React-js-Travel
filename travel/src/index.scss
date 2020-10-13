@@ -1,0 +1,17 @@
+* {
+    margin: 0rem;
+    padding: 0rem;
+    box-sizing: border-box;
+}
+
+$mainBlack:#222;
+$mainPurple:#82b;
+$mainGrey:#ececec;
+$mainWhite:#fff;
+
+body {
+    background: $mainWhite;
+    font-family: 'Lato', sans-serif;
+    color: $mainBlack;
+}
+

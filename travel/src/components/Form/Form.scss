@@ -1,0 +1,24 @@
+@import '../../index.scss';
+
+.title {
+    font-size: 1.7rem;
+    margin: 1rem 5rem;
+    background-color: rgb(208, 211, 207);
+    color:$mainPurple;
+    padding: 0.3rem;
+    border-radius: 1rem;
+}
+.form-interest {
+    text-align: left;
+    margin-bottom: 1rem;
+    color: indigo;
+}
+.button-form {
+    padding: 0rem;
+    text-align: left;
+}
+.form-field {
+    padding: 0rem ;
+    margin: 0.5rem 0rem;
+   
+}

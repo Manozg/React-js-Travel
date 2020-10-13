@@ -1,0 +1,40 @@
+@import '../../index.scss';
+
+* {
+    text-align: center;
+}
+
+
+.footer {
+    background-color: $mainBlack;
+    padding: 10px 50px;
+    justify-content: center;
+    color: white;
+    margin-bottom: 2px;
+
+}
+
+.footer-text {
+    padding-bottom: 7px;
+}
+
+.btn-social {
+    margin:5px;
+    color: white;
+    transition: transform 2s;
+}
+.btn-social :hover {
+    transform: translateY(-5px);
+}
+.btn-google {
+    color: #f4b400;
+}
+.btn-facebook {
+    color: #4968ad;
+}
+.btn-youtube {
+    color: #eb3223;
+}
+.btn-twitter {
+    color: #49a1eb;
+}

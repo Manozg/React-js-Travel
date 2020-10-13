@@ -1,0 +1,63 @@
+@import '../../index.scss';
+.title {
+    font-size: 1.7rem;
+    margin: 1rem 5rem;
+    background-color: rgb(208, 211, 207);
+    color:$mainPurple;
+    padding: 0.3rem;
+    border-radius: 1rem;
+}
+.faqs {
+    margin: 0 auto;
+    padding-bottom: 0.5rem;
+    width: 100%;
+    .faq{
+        padding: 0.5rem;
+        margin: 1rem 5rem;
+        background-color:rgb(250, 246, 246);
+        border-radius: 1.5rem;
+        box-shadow:0px 0px 10px rgba(0, 0, 0, 0.2);
+    }
+}
+.faqs .faq .faq-questions {
+    position: relative;
+    font-size: 1.1rem;
+    text-align: start;
+    padding-right: 80px;
+    transition: all 0.3s ease;
+}
+
+.faqs .faq.open .faq-questions {
+    margin-bottom: 20px;
+}
+
+.faqs .faq .faq-questions::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    right: 0%;
+    left: 70%;
+    transform: translateY(-50%);
+    width: 50%;
+    height: 60%;
+    background-image: url('../../images/arrow.png');
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    transition: all 0.3s ease-out;
+}
+.faqs .faq.faq.open .faq-questions::after {
+    transform: translateY(-50%) rotate(180deg) ;
+}
+
+.faqs .faq .faq-answers {
+    opacity: 0;
+    max-height: 0;
+    overflow-y: hidden;
+    transition: all 0.3s ease-in;
+    text-align: left;
+}
+.faqs .faq.open .faq-answers {
+    max-height: 1000px;
+    opacity: 1;
+}
